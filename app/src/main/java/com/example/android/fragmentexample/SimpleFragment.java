@@ -18,13 +18,17 @@ import android.widget.Toast;
  */
 public class SimpleFragment extends Fragment {
 
+    // radio group states
+    private static final int YES = 0;
+    private static final int NO = 1;
+
     public SimpleFragment() {
         // Required empty public constructor
     }
 
-    // radio group states
-    private static final int YES = 0;
-    private static final int NO = 1;
+    public static SimpleFragment newInstance() {
+        return new SimpleFragment();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
